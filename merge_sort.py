@@ -38,6 +38,7 @@ def merge(left, right):
 random_strings = [''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=5)) for i in range(20)]
 
 print("Original List of random strings: \n", random_strings)
+# print(random.randint(0, len(random_strings)))
 
 # Apply merge sort
 sorted_strings = merge_sort(random_strings)
