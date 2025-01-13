@@ -1,3 +1,4 @@
+
 """FIND THE SUM OF EVERY THIRD ELEMENT IN THE LINKED LIST WHILE REVERSE TRAVERSING"""
 class Node:
     def __init__(self, data=None):
