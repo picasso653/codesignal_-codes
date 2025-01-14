@@ -9,7 +9,7 @@ class Area:
 
     # TODO: Define the dfs_traversal method to perform a depth-first search traversal over the areas
     def dfs_traversal(self, visited=None):
-        if visited == None:
+        if visited is None:
             visited = set()
         visited.add(self.name)
         print(self.name, end='->')
@@ -31,7 +31,7 @@ town.subareas[1].add_subarea('Obeeyie')
 town.subareas[2].add_subarea('Denkyira')
 town.subareas[2].add_subarea('Ofankor')
 
-# TODO: Conduct a DFS traversal to print all areas
+#Conduct a DFS traversal to print all areas
 print("Areas and its subareas in Accra include")
 town.dfs_traversal()
 print('end')
