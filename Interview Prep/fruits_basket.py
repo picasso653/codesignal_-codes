@@ -3,7 +3,6 @@ fruits = ['apple', 'banana', 'cherry', 'date']
 fruits_in_salad = ""
 
 index = 0
-# TODO: Create a while loop that assembles a string of fruit names separated by spaces, without adding a space after the last fruit
 while index < len(fruits):
 # Hint: Consider using a conditional to determine when to add a space
     if index == len(fruits) - 1:
