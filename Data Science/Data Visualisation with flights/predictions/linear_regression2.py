@@ -15,7 +15,6 @@ flights_pivot = pd.pivot_table(flights_data, values='passengers', index='year', 
 X = np.array(flights_pivot['year']).reshape(-1,1)
 y = flights_pivot['passengers']
 
-# TODO: Fit the Linear Regression model and predict the passenger count for the decade of 1971 to 1980
 reg = LinearRegression().fit(X, y)
 new_years = np.array(range(1971, 1981)).reshape(-1, 1)
 new_passenger_numbers = reg.predict(new_years)
@@ -26,7 +25,6 @@ for year, passengers in zip(new_years, new_passenger_numbers):
 
 # Plot Original data as a scatter plot and a Regression line
 plt.scatter(X, y, color='blue')
-# TODO: Add the predictions to the plot as a Regression line
 Y_pred = reg.predict(X)
 plt.plot(X, Y_pred, color = "g")
 
