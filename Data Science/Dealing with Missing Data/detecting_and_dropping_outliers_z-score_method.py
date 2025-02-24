@@ -18,3 +18,6 @@ print(outliers_zscore)
 
 [2 rows x 16 columns]
 """
+# Using the Z-score method
+
+titanic_df = titanic_df[titanic_df['age_zscore'] <= 3]
